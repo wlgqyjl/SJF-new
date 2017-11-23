@@ -2,40 +2,40 @@ package SJF;
 
 public class Task {
 	private int taskID;
-	private int arrivalTime;
-	private int serviceTime;
+	private float arrivalTime;
+	private float serviceTime;
 	private int startingTime;
-	private int finishingTime;
-	private int turnAroundTime;
-	private int weightTurnAround;
+	private float finishingTime;
+	private float turnAroundTime;
+	private float weightTurnAround;
 	public int getTaskID() {
 		return taskID;
 	}
-	public int getArrivalTime() {
+	public float getArrivalTime() {
 		return arrivalTime;
 	}
-	public int getServiceTime() {
+	public float getServiceTime() {
 		return serviceTime;
 	}
 	public int getStartingTime() {
 		return startingTime;
 	}
-	public void setFinishingTime(int finishingTime) {
+	public void setFinishingTime(float finishingTime) {
 		this.finishingTime = finishingTime;
 	}
-	public int getFinishingTime() {
+	public float getFinishingTime() {
 		return finishingTime;
 	}
-	public void setTurnAroundTime(int turnAroundTime) {
+	public void setTurnAroundTime(float turnAroundTime) {
 		this.turnAroundTime = turnAroundTime;
 	}
-	public int getTurnAroundTime() {
+	public float getTurnAroundTime() {
 		return turnAroundTime;
 	}
-	public void setWeightTurnAround(int weightTurnAround) {
+	public void setWeightTurnAround(float weightTurnAround) {
 		this.weightTurnAround = weightTurnAround;
 	}
-	public int getWeightTurnAround() {
+	public float getWeightTurnAround() {
 		return weightTurnAround;
 	}
 	public void setStartingTime(int startingTime) {

@@ -6,16 +6,16 @@ public class SJFONE {
 	public List<Task> sjf(List<Task> list){
 		List<Task> l=new ArrayList<Task>();
 		int result=0;
-		int weightTurnAround=0;  
-		int turnAroundTime=0;        
-		int finishingTime=0;		
+		float weightTurnAround=0;  
+		float turnAroundTime=0;        
+		float finishingTime=0;		
 		int startingTime=0;			
-		int serviceTime=0;			
-		int arrivalTime=0;			
+		float serviceTime=0;			
+		float arrivalTime=0;			
 		int taskID=0;				
 		Task t = new Task();		 
 		int i=0;					
-		int s=0;					
+		float s=0;					
 		int number=0;
 		l.add(list.get(i));
 		System.out.println("总用时\t到达任务\t开始任务\t完成任务");
@@ -82,10 +82,10 @@ public class SJFONE {
 	}
 	public int judge(List<Task> list){
 		int	[] result=new int[100];
-		int shortest=100000;
+		float shortest=100000;
 		int number=0;
 		int n=0;
-		int first=100000;
+		float first=100000;
 		for(int i=0;i<list.size();i++){
 			if (list.get(i).getServiceTime()<shortest){
 				shortest=list.get(i).getServiceTime();
@@ -108,8 +108,8 @@ public class SJFONE {
 		System.out.println("任务ID\t到达时间\t服务时间\t开始时间\t完成时间\t周转时间\t带权周转时间");
 		for(int i=0;i<list.size();i++){
 			t=list.get(i);
-			System.out.println(t.getTaskID()+"\t"+t.getArrivalTime()+"\t"+t.getServiceTime()+"\t"+
-			t.getStartingTime()+"\t"+t.getFinishingTime()+"\t"+t.getTurnAroundTime()+"\t"+t.getWeightTurnAround());
+			System.out.println(t.getTaskID()+"\t"+(int)t.getArrivalTime()+"\t"+(int)t.getServiceTime()+"\t"+
+			(int)t.getStartingTime()+"\t"+(int)t.getFinishingTime()+"\t"+(int)t.getTurnAroundTime()+"\t"+t.getWeightTurnAround());
 		}
 	}
 }

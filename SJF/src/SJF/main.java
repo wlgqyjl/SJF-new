@@ -6,7 +6,6 @@ public class main {
 
 	public static void main(String[] args) {
 		int answer=0;
-		//int reset=0;
 		List<Task> list = new ArrayList<Task>();
 		System.out.println("请输入进程调度类型:\n"
 						+  "1.单队列\n"
